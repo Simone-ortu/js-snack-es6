@@ -14,30 +14,50 @@
 const num = [];
 let numOdd = 'red'
 let numEven = 'green'
-let evenNum =[];
-let oddNum= [];
+let evenNum = [];
+let oddNum = [];
 for (let i = 0; i < 10; i++) {
-    num.push(genaraRnd(10,1))
-    if (num[i] %2 ==0) {
+    num.push(genaraRnd(10, 1))
+    if (num[i] % 2 == 0) {
         evenNum.push(num[i])
     }
-    else{
+    else {
         oddNum.push(num[i])
     }
 }
 
 console.log(num);
-     console.log(evenNum);
-     console.log(oddNum);
+console.log(evenNum);
+console.log(oddNum);
 
 
-  document.getElementById('numeriP').innerHTML= `<p class="${numEven}">${evenNum}</p>`
-    
-  document.getElementById('numeriD').innerHTML= `<p class="${numOdd}">${oddNum}</p>`
+document.getElementById('numeriP').innerHTML = `<p class="${numEven}">${evenNum}</p>`
+
+document.getElementById('numeriD').innerHTML = `<p class="${numOdd}">${oddNum}</p>`
 
 
 
 
 function genaraRnd() {
-    return Math.floor(Math.random() * (10 - 1) ) + 1;
-  }
+    return Math.floor(Math.random() * (10 - 1)) + 1;
+}
+
+
+//   3) Utilizzando const e/o let. Dare la possibilità di inserire due parole.
+//    Verificare se le due parole hanno la stessa lunghezza. Se hanno la stessa lunghezza, 
+//   stamparle entrambe altrimenti stampare la più lunga delle due.
+
+const primaParola = prompt('Inserire una parola')
+const secondaParola = prompt('Inserire una parola')
+
+if (primaParola.length > secondaParola.length) {
+    console.log(primaParola);
+}else if (primaParola.length == secondaParola.length) {
+    console.log(primaParola + ' '+ secondaParola);
+}else{
+    console.log(secondaParola);
+}
+    
+
+
+
