@@ -31,9 +31,9 @@ console.log(num);
      console.log(oddNum);
 
 
-  document.getElementById(numeriP).addClass=`<p class="${numEven}">${evenNum}</p>`
+  document.getElementById('numeriP').innerHTML= `<p class="${numEven}">${evenNum}</p>`
     
-  document.getElementById(numeriD).innerHTML=`<p class="${numOdd}">${oddNum}</p>`
+  document.getElementById('numeriD').innerHTML= `<p class="${numOdd}">${oddNum}</p>`
 
 
 
