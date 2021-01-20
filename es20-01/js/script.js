@@ -13,7 +13,7 @@ const bici = [
     },
     {
         nome: 'bici da corsa',
-        peso: 30
+        peso: 15
     },
     {
         nome: 'BMX',
