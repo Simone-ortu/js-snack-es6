@@ -21,15 +21,13 @@ const bici = [
     },
 ]
 
-const [bici1, bici2, bici3, bici4] = bici
-let biciDefault = bici1.peso
+
+let biciMinore = bici[0]
+bici.forEach((Element)=>{
+    if(biciMinore.peso > Element.peso){
+        biciMinore = Element
+    }
+})
 
 
-if (bici2.peso < biciDefault) {
-    biciDefault = bici2
-} else if (bici3.peso < biciDefault){
-    biciDefault = bici3
-}else if (bici4.peso < biciDefault) {
-    biciDefault = bici4
-}
-console.log(`La bici che pesa meno é :${biciDefault.nome},il suo peso é :${biciDefault.peso}`);
+console.log(`La bici che pesa meno é :${biciMinore.nome},il suo peso é :${biciMinore.peso}`);
